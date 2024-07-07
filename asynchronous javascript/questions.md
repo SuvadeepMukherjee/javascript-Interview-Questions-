@@ -208,3 +208,86 @@ new Promise((resolve, reject) => {
 catch also returns a promise so we can have a  then after catch
 
 catch creates a Promise Reaction Record (`PromiseRejectReactions`) contains among other fields a handler property that holds the callbacks we passed to then .When the promise rejects the handler is added to the microtask queue and has access to the value with which the promise resolves (When the promise rejects this handler receives the value of PromiseResult as its argument after which its pushed to the microtask queue)
+
+#### Q21: async keyword 
+
+**Answer**:The `async` keyword is used to write functions that handle asynchronous actions
+
+async functions always return a promise. An async function will return in one of three ways:
+
+- If there’s nothing returned from the function, it will return a promise with a resolved value of undefined.
+- If there’s a non-promise value returned from the function, it will return a promise resolved to that value.
+- If a promise is returned from the function, it will simply return that promise
+
+#### Q22:Write an async function, withAsync() which reproduces the functionality of withConstructor(). Though your function will return a promise, it should not construct the promise using the new keyword. Instead, it should rely on the fact that an asynchronous function automatically returns a promise.
+
+```js
+function withConstructor(num) {
+
+  return new Promise((resolve, reject) => {
+
+    if (num === 0) {
+
+      resolve("zero");
+
+    } else {
+
+      reject("not zero");
+
+    }
+
+  });
+
+}
+```
+
+**Answer**:
+
+```js
+async function withAsync(num) {
+
+  if (num === 0) {
+
+    return "zero";
+
+  } else {
+
+    throw "not zero";
+
+  }
+
+}
+```
+
+#### Q23:await operator 
+
+**Answer**:he await keyword can only be used inside an async function. await is an operator: it returns the resolved value of a promise. Since promises resolve in an indeterminate amount of time, await halts, or pauses, the execution of our async function until a given promise is resolved.
+
+#### Q24:brainstormDinner() function expects no arguments and returns a new promise with a resolved value of a string representing a meal . Fill in the body of the announceDinner() function so that it has the same functionality as nativePromiseDinner(). It should wait for the promise returned from brainstormDinner() to resolve, and then log a string to the console in the same format as did nativePromiseDinner(). You’ll need to use the await operator inside your function.
+
+```js
+function nativePromiseDinner() {
+
+  brainstormDinner().then((meal) => {
+
+    console.log(`I'm going to make ${meal} for dinner.`);
+
+  });
+
+}
+```
+
+**Answer**:
+
+```js
+async function announceDinner() {
+
+  // Write your code below:
+
+  let meal = await brainstormDinner();
+
+  console.log(`I'm going to make ${meal} for dinner.`);
+
+}
+```
+
