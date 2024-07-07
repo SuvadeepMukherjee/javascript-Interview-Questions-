@@ -140,7 +140,7 @@ console.log(objClone1, objClone2, objClone3, objClone4);
 Primitive data types are also called primitive types and objects are called reference types because of the different way they are stored in memory .
 In the call stack functions are executed and in the heap objects(reference types) are stored in memory .Primitives or primitive types are stored in the call stack (primitive types are stored in the execution contexts in which they are declared)
 
-First javascript will create a so-called unique identifier with the variable name .Then a piece of memory will be allocated with a certain address and finally the value would be stored in memory at the specified address .The identifier actually points to the address and not to the value itself .The value at a certain address is immutable (it cannot be changed) . For objects the piece of memory in the call stack has a reference to the piece of memory in the heap that holds our me object
+When we declare a variable  javascript will create a so-called unique identifier with the variable name .Then a piece of memory will be allocated with a certain address and finally the value would be stored in memory at the specified address .The identifier actually points to the address and not to the value itself .The value at a certain address is immutable (it cannot be changed) . For objects the piece of memory in the call stack has a reference to the piece of memory in the heap that holds our me object
 
 ![reference-types](../assets/reference-types-prmitve-typesa.png)
 
