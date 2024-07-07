@@ -166,3 +166,147 @@ person.name = "John";
 person.age = 30;
 ```
 
+#### Q9:Create a function multiplyByTwo(obj) that multiplies all numeric property values of the nums object by 2
+
+```javascript
+let nums = {
+
+  a: 100,
+
+  b: 200,
+
+  title: "My nums",
+
+};
+```
+
+**Answer**:The answer is given in the below code snippet 
+
+```javascript
+function multiplyByTwo(obj) {
+
+  for (const key in obj) {
+
+    if (typeof obj[key] === "number") {
+
+      obj[key] *= 2;
+
+    }
+
+  }
+
+}
+
+let nums = {
+
+  a: 100,
+
+  b: 200,
+
+  title: "My nums",
+
+};
+
+multiplyByTwo(nums);
+```
+
+#### Q10:Loop through the user object and log the keys and its values 
+
+```javascript
+const user = {
+
+  name: "Roadside Coder",
+
+  age: 24,
+
+  isTotallyAwesome: true,
+
+};
+```
+
+**Answer**: The answer is provided in the below code snippet 
+
+```javascript
+const user = {
+
+  name: "Roadside Coder",
+
+  age: 24,
+
+  isTotallyAwesome: true,
+
+};
+
+for (const key in user) {
+
+  console.log(`${key}:${user[key]}`);
+
+}
+```
+
+#### Q11:Given a studentObj as as shown above write the code to iterate through studentObj and find the average age of students  i.e 25 in this case
+
+```javascript
+const studentObj = {
+
+  yash: 26,
+
+  vaibhav: 24,
+
+  rajesh: 25,
+
+};
+```
+
+**Answer**: The answer is given in below code snippet 
+
+```javascript
+const studentObj = {
+
+  yash: 26,
+
+  vaibhav: 24,
+
+  rajesh: 25,
+
+};
+
+let length = Object.values(studentObj).length;
+
+let sum = 0;
+
+for (const key in studentObj) {
+
+  sum += studentObj[key];
+
+}
+
+console.log(sum / length);
+```
+
+#### Q12:Given a studentObj as shown above write the code to iterate through studentObj and find the name whose age is 25 .i.e Rajesh
+
+**Answer**: The answer is shown in the below code snippet
+
+```javascript
+const studentObj = {
+
+  yash: 26,
+
+  vaibhav: 24,
+
+  rajesh: 25,
+
+};
+
+for (const key in studentObj) {
+
+  if (studentObj[key] === 25) {
+
+   console.log(key);
+
+  }
+
+} 
+```
+
