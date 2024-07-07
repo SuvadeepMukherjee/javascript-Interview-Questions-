@@ -95,6 +95,6 @@ const matilda = new Person("matilda", 2017);
 **Answer**: The following steps are performed
 
 1. new {} is created
-2. function is called this={}
+2. function is called ,this={}
 3. {} linked to prototype
 4. function automatically return {}
