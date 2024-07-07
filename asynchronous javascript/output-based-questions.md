@@ -583,3 +583,183 @@ Promise.resolve()
 **Answer**:
 
 e rund b runs c runs d runs
+
+#### Q20:What will be logged to the console ?
+
+```js
+const pause = (millis) => {
+
+  return new Promise((resolve) => {
+
+    setTimeout(() => {
+
+      resolve("resolved");
+
+    }, millis);
+
+  });
+
+};
+
+const start = Date.now();
+
+console.log("start");
+
+pause(1000).then((res) => {
+
+  const end = Date.now();
+
+  const secs = (end - start) / 1000;
+
+  console.log(res, ":", secs);
+
+});
+```
+
+**Answer**:
+
+start resolved : 1.011
+
+#### Q21:What will be logged to the console ?
+
+```js
+console.log("start");
+
+const promise1 = new Promise((resolve, reject) => {
+
+  console.log(1);
+
+  resolve(2);
+
+});
+
+promise1.then((res) => {
+
+  console.log(res);
+
+});
+
+console.log("end");
+```
+
+**Answer**:start 1 end 2
+
+#### Q22:What will be logged to the console ?
+
+**Answer**:start 1 3 end 2 
+
+#### Q23:What will be logged to the console ?
+
+**Answer**:start middle 1 end success
+
+#### Q24:What will be logged to the console ?
+
+```js
+function job() {
+
+  return new Promise(function (resolve, reject) {
+
+    reject();
+
+  });
+
+}
+
+let promise = job();
+
+promise
+
+  .then(function () {
+
+    console.log("Success 1");
+
+  })
+
+  .then(function () {
+
+    console.log("success 2");
+
+  })
+
+  .then(function () {
+
+    console.log("success 3");
+
+  })
+
+  .catch(function () {
+
+    console.log("error 1");
+
+  })
+
+  .then(function () {
+
+    console.log("success 4");
+
+  });
+```
+
+**Answer**:
+
+Error 1 success 4
+
+#### Q25:What will be logged to the console ?
+
+```js
+function job(state) {
+
+  return new Promise(function (resolve, reject) {
+
+    if (state) {
+
+      resolve("success");
+
+    } else {
+
+      reject("error");
+
+    }
+
+  });
+
+}
+
+let promise = job(true);
+
+promise
+
+  .then(function (data) {
+
+    console.log(data);
+
+    return job(false);
+
+  })
+
+  .catch(function (error) {
+
+    console.log(error);
+
+    return "Error Caught";
+
+  })
+
+  .then(function (data) {
+
+    console.log(data);
+
+    return job(true);
+
+  })
+
+  .catch(function (error) {
+
+    console.log(error);
+
+  });
+```
+
+**Answer**:
+
+success error Error Caught
