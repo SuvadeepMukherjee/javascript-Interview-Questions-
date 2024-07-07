@@ -98,3 +98,35 @@ const matilda = new Person("matilda", 2017);
 2. function is called ,this={}
 3. {} linked to prototype
 4. function automatically return {}
+
+#### Q10:Draw the prototype chain 
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.age);
+
+};
+
+const matilda = new Person("matilda", 2017);
+```
+
+**Answer**: The prototype chain is shown below 
+
+![prototype-chain](../assets/prototype-chain.png)
+
+#### Q11; What is prototypal inheritance ?
+
+**Answer**: if a property or method cannot be found in a certain object javascript will look into its prototype
+
+#### Q12: What is prototype chain ? 
+
+**Answer**: Series of links between objects linked through prototypes 
