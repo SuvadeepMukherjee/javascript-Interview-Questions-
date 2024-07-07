@@ -310,3 +310,192 @@ for (const key in studentObj) {
 } 
 ```
 
+#### Q13:Guess the output of below code snippet 
+
+```javascript
+const obj = {
+
+  a: "one",
+
+  b: "two",
+
+  a: "three",
+
+};
+
+console.log(obj);
+```
+
+**Answer**:The output is shown below 
+
+```javascript
+{ a: 'three', b: 'two' }
+```
+
+#### Q14:Guess the output of below code snippet 
+
+```javascript
+const a = {};
+
+const b = { key: "b" };
+
+const c = { key: "c" };
+
+a[b] = 123;
+
+a[c] = 456;
+
+console.log(a[b]);
+```
+
+**Answer**: 456 , explanation:- In javascript when we try to use an object as a key in another object it gets converted to a string , However the default string representation of an object is “[object object]” Thus 456 will be logged to the console
+
+#### Q15:What will be logged to the console ? 
+
+```javascript
+console.log([..."Lydia"]);
+```
+
+**Answer**:`[ 'L', 'y', 'd', 'i', 'a' ]`
+
+#### Q16:What will be logged to the console ? 
+
+```js
+const user = { name: "Lydia", age: 21 };
+
+const admin = { admin: true, ...user };
+
+console.log(admin);
+```
+
+**Answer**:`{ admin: true, name: 'Lydia', age: 21 }`
+
+#### Q17:What will be logged to the console ?
+
+```js
+let c = { greeting: "Hey" };
+
+let d;
+
+d = c;
+
+c.greeting = "Hello";
+
+console.log(d.greeting);
+```
+
+**Answer**:“Hello”
+
+#### Q18:What will be the 2 console logs 
+
+```js
+console.log({ a: 1 } == { a: 1 });
+
+console.log({ a: 1 } === { a: 1 });
+```
+
+**Answer**:both will log false since  JavaScript compares objects by reference, not value
+
+#### Q19:What is JSON.stringify and JSON.parse
+
+**Answer**:
+
+JSON.stringify ⇒ convert object to string
+
+JSON.parse ⇒ convert string to object
+
+#### Q20:Applications of JSON.stringify and JSON.parse 
+
+**Answer**:we cannot store objects in local storage because javascript will try to  convert it into string resulting in '[Object object]' so we need to convert  the object into a string before storing it in localStorage
+
+```js
+const user = {
+
+  name: "Swapan",
+
+  age: 67,
+
+};
+
+const strObj = JSON.stringify(user);
+
+localStorage.setItem("test", strObj);
+
+console.log(JSON.parse(localStorage.getItem("test")));
+```
+
+#### Q21:What will be logged to the console ? 
+
+```js
+const settings = {
+
+  userName: "Piyush",
+
+  level: 19,
+
+  health: 50,
+
+};
+
+const data = JSON.stringify(settings, ["level", "health"]);
+
+console.log(data);
+```
+
+**Answer**: The output is shown below 
+
+{"level":19,"health":50}, It will only stringify the properties provided that is level and health 
+
+#### Q22:How do you rename a variable in a destructuring assignment that is already declared ?
+
+```js
+let user = {
+
+  name: "Piyush",
+
+  age: 24,
+
+};
+
+const name = "Roadside Coder";
+
+//error Cannot redeclare block-scoped variable 'name'
+
+const { name } = user;
+```
+
+**Answer**:The solution is provided in the below code snippet 
+
+```js
+let user = {
+
+  name: "Piyush",
+
+  age: 24,
+
+};
+
+const name = "Roadside Coder";
+
+const { name: myName } = user;
+
+console.log(myName);
+```
+
+#### Q23:What will be logged to the console ?
+
+```js
+function getItems(fruitList, favoriteFruit, ...args) {
+
+  return [...fruitList, ...args, favoriteFruit];
+
+}
+
+console.log(getItems(["banana", "apple"], "pear", "orange"));
+
+
+```
+
+**Answer**: The output is shown below 
+
+`[ 'banana', 'apple', 'orange', 'pear' ]`
