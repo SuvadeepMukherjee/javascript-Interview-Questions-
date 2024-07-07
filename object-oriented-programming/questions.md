@@ -37,3 +37,64 @@
 ✅ Behavior (method) is delegeted to the linked prototype object
 
 ![prototypal-inheritance](../assets/prototypal-inheritance.png)
+
+#### Q5:What are the 3 ways of implementing prototypal inheritance in javascript ?
+
+**Answer**:The 3 ways of implementing prototypal inheritance in js are the following
+
+1.  constructor Functions
+2. ES6 Classes
+3. Object.create()
+
+#### Q6:Create a Person Constructor function it has properties firstName and birthYear and a method calcAge , Create a object matilda from the Person Constructor with the values “matilda” and 2017 and then call the calcAge method ?  
+
+**Answer**: The following code snippet shows the solution 
+
+```js
+function Person(firstName, birthyear) {
+
+  this.firstName = firstName;
+
+  this.birthyear = birthyear;
+
+}
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.birthyear);
+
+};
+
+const matilda = new Person("matilda", 2017);
+
+matilda.calcAge();
+```
+
+#### Q7:Can arrow functions work as constructor functions ? 
+
+**Answer**: no because they dont have this 
+
+#### Q8:Why it is recommended to add methods on the prototype property of a constructor function instead of adding direcly in the constructor function
+
+**Answer**:to save memory 
+
+#### Q9:What are the steps performed when we call new Person("matilda",2017)
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+const matilda = new Person("matilda", 2017);
+```
+
+**Answer**: The following steps are performed
+
+1. new {} is created
+2. function is called this={}
+3. {} linked to prototype
+4. function automatically return {}
