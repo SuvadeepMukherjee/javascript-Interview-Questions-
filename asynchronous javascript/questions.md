@@ -331,44 +331,24 @@ greet(sayHello);
 Here's a simple example of callback hell in JavaScript:
 
 ```js
-
-
-function firstTask(callback) {
-
-  setTimeout(function () {
-
-    console.log("First Task Complete");
-
-    callback();
-
+function task1(cb) {
+  setTimeout(() => {
+    console.log("task 1 completed");
+    cb();
   }, 1000);
-
 }
 
-function secondTask(callback) {
-
-  setTimeout(function () {
-
-    console.log("Second Task Complete");
-
-   callback();
-
-  }, 1000);
-
+function task2(cb) {
+  setTimeout(() => {
+    console.log("task 2 completed");
+    cb();
+  }, 2000);
 }
-
-
-
-firstTask(function () {
-
-  secondTask(function () {
-
-    console.log("Both tasks complete");
-
+task1(() => {
+  task2(() => {
+    console.log("All tasks completed");
   });
-
 });
-
 
 ```
 
