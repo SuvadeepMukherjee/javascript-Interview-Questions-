@@ -136,6 +136,14 @@ console.log(objClone1, objClone2, objClone3, objClone4);
 
 **Answer**:The value remains the same in the execution context , we are changing the object in heap 
 
+**Detailed Explanation:**
+Primitive data types are also called primitive types and objects are called reference types because of the different way they are stored in memory .
+In the call stack functions are executed and in the heap objects(reference types) are stored in memory .Primitives or primitive types are stored in the call stack (primitive types are stored in the execution contexts in which they are declared)
+
+First javascript will create a so-called unique identifier with the variable name .Then a piece of memory will be allocated with a certain address and finally the value would be stored in memory at the specified address .The identifier actually points to the address and not to the value itself .The value at a certain address is immutable (it cannot be changed) . For objects the piece of memory in the call stack has a reference to the piece of memory in the heap that holds our me object
+
+![reference-types](../assets/reference-types-prmitve-typesa.png)
+
 #### Q8:Explain the different ways of creating object in javascript? Explain all the 3 ways
 
 **Answer**: The 3 different ways to create objects are shown below 
