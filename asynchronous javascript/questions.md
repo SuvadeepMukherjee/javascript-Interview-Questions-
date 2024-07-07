@@ -291,3 +291,84 @@ async function announceDinner() {
 }
 ```
 
+#### Q25:Write the differences between Promise and callback 
+
+| Feature        | Promise                                    | Callback                                     |
+| -------------- | ------------------------------------------ | -------------------------------------------- |
+| Syntax         | uses .then() and .catch() methods          | passed as function arguments                 |
+| Error-handling | uses .catch() for error-handling           | typically uses the first argument for errors |
+| chaining       | allows chaining with .then()               | nested callbacks can lead to callback hell   |
+| asynchronous   | supports sequential and parallal execution | typcally used for asynchronous operation     |
+
+#### Q26:Show an example of a callback 
+
+**Answer**:
+
+```js
+function greet(callback) {
+
+  callback();
+
+}
+
+function sayHello() {
+
+  console.log("Hello, world!");
+
+}
+
+greet(sayHello);
+```
+
+#### Q27:Why do we use promises over callbacks and why do we use async-await over promises
+
+**Answer**:We use promises over callbacks for better readability and error handling. We use await and async over promises for cleaner asynchronous code and easier handling of asynchronous operations.
+
+#### Q28:What is callback hell and show a very simple example of callback hell
+
+**Answer**:Callback hell refers to the situation in asynchronous programming where callbacks are nested within each other, making the code difficult to read and maintain due to its deep indentation and complex control flow. It commonly occurs when handling multiple asynchronous operations sequentially.
+
+Here's a simple example of callback hell in JavaScript:
+
+```js
+
+
+function firstTask(callback) {
+
+  setTimeout(function () {
+
+    console.log("First Task Complete");
+
+    callback();
+
+  }, 1000);
+
+}
+
+function secondTask(callback) {
+
+  setTimeout(function () {
+
+    console.log("Second Task Complete");
+
+   callback();
+
+  }, 1000);
+
+}
+
+
+
+firstTask(function () {
+
+  secondTask(function () {
+
+    console.log("Both tasks complete");
+
+  });
+
+});
+
+
+```
+
