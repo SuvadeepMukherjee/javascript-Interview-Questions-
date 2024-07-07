@@ -179,3 +179,23 @@ fn(5, 6, 3, 7, 8, 9);
 ```
 
 **Answer**:The following will be logged to the console `6 3 [ 7, 8, 9 ]`
+
+#### Q10:What will be logged to the console and why ? 
+
+```javascript
+const obj1 = {
+
+  key1: "value1",
+
+  key2: "value2",
+
+  key3: "value3",
+
+};
+
+const obj2 = { ...obj1 };
+
+console.log(obj2 === obj1);
+```
+
+**Answer**:false because spread does a *deep copy* 
