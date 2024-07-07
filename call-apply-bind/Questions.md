@@ -220,4 +220,72 @@ setTimeout(() => {
 }, 0);
 ```
 
-**Answer**:
+**Answer**:this within function(sloppy mode) ⇒ window (setTimeout()) .Thus output would be chilling , cool
+
+#### Q7:Call printAnimals such that it prints all animals in object
+
+**Answer**:The code snippet is shown below 
+
+```javascript
+const animals = [
+
+  { species: "Lion", name: "King" },
+
+  {
+
+    species: "Whale",
+
+    name: "Queen",
+
+  },
+
+];
+
+function printAnimals(i) {
+
+  this.print = function () {
+
+    console.log("#" + i + " " + this.species + ":" + this.name);
+
+  };
+
+  this.print();
+
+}
+```
+
+#### Q8:What will be logged to the console ?
+
+```javascript
+function f() {
+
+  console.log(this);
+
+}
+
+let user = {
+
+  g: f.bind(null),
+
+};
+
+user.g();
+```
+
+**Answer**:`Global window object`
+
+#### Q9:What will be logged to the console 
+
+```java
+function f() {
+
+  console.log(this.name);
+
+}
+
+f = f.bind({ name: "John" }).bind({ name: "Ann" });
+
+f();
+```
+
+**Answer**:John
