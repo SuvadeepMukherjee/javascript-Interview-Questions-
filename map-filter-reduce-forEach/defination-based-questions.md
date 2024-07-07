@@ -55,3 +55,32 @@ const sumWithInitialValue = arr.reduce(
 | returns                      | undefined                            | returns a new array                |
 | chaining other array methods | not possible as it returns undefined | possible as it returns a new array |
 
+#### Q6:What will be logged to the console ? 
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+
+const newArr = arr.forEach((element, index, array) => {
+
+  console.log("Element: " + element + " index :" + index);
+
+  return element + index;
+
+});
+
+console.log(newArr);
+```
+
+**Answer**: The follwing will be logged 
+
+`Element: 1 index :0 <br>
+
+Element: 2 index :1<br>
+
+Element: 3 index :2<br>
+
+ Element: 4 index :3<br>
+
+ Element: 5<br>
+
+ index :4 undefined`
