@@ -190,3 +190,178 @@ Person.prototype.calcAge = function () {
 ```
 
 **Answer**:It points back to the constructor function
+
+#### Q16:Create a class Person which has the following properties firstName and birthYear .It has a method calcAge() which logs to the console 2037-birthYear
+
+**Answer**: The code snippet is shown below 
+
+```js
+class Person {
+
+  constructor(firstName, birthYear) {
+
+    this.firstName = firstName;
+
+    this.birthYear = birthYear;
+
+  }
+
+  calcAge() {
+
+    console.log(2037 - this.birthYear);
+
+  }
+
+}
+```
+
+#### Q17:“All of the methods that we write in a class (outside of the constructor) is added to the prototype property of the class i.e if the class is Person it will be added to Person.prototype “ Is the above statement correct ? 
+
+**Answer**: yes
+
+#### Q18:Suppose we have a class Person , it has properties and methods can we add methods on the  Person.prototype Object 
+
+**Answer**:Yes
+
+#### Q19:What will be logged to the console ? 
+
+```js
+class PersonCl {
+
+  constructor(firstName, birthYear) {
+
+    this.firstName = firstName;
+
+    this.birthYear = birthYear;
+
+  }
+
+  calcAge() {
+
+    console.log(2037 - this.birthYear);
+
+  }
+
+  greet() {
+
+    console.log(`Hey ${this.firstName}`);
+
+  }
+
+}
+
+PersonCl.prototype.bye = function () {
+
+  console.log(`Bye ${this.firstName}`);
+
+};
+
+const jessica = new PersonCl("Jessica", 1996);
+
+jessica.bye();
+
+console.log(jessica.__proto__ === PersonCl.prototype);
+```
+
+**Answer**: true
+
+#### Q20:Are classes hoisted , are they first class citizens , are they executed in sloppy mode ? 
+
+**Answer**:
+
+1. Classes are not hoisted(even if they are class declarations)
+2. Classes are first class citizens
+3. classes are executed in strict mode
+
+#### Q21:What are getters and setters ? 
+
+**Answer**:getters and setter properties are also called accessor properties ,the normal properties are called data properties ,getters and setters are functions that get and set a value but on the outside they still look like regular properties 
+
+```js
+const account = {
+
+  owner: "Jonas",
+
+  movements: [200, 530, 120, 300],
+
+  get latest() {
+
+    return this.movements.slice(-1).pop();
+
+  },
+
+  set latest(mov) {
+
+    this.movements.push(mov);
+
+  },
+
+};
+
+console.log(account.latest);
+
+account.latest = 50;
+```
+
+#### Q22:What are static methods ? 
+
+**Answer**:static methods are attached to the constructor and not to the prototype property of the constructor 
+
+```js
+Array.from(document.querySelectorAll("h1"));
+```
+
+we can not use the from method on an array , it is attached to the array constructor and not on the prototype property of the constructor .Thus all arrays  do not inherit this method it is simply attached to the constructor 
+
+#### Q23:Can we call a static method on instances ?
+
+**Answer**:nope
+
+#### Q24:Add a static method Hey which logs to the console “hey there” to the above function constructor and then call it ? 
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.birthYear);
+
+};
+```
+
+**Answer**:The code snippet is shown below 
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.birthYear);
+
+};
+
+Person.Hey = function () {
+
+  console.log("hey there");
+
+};
+
+const suva = new Person("suva", 1991);
+
+Person.Hey();
+
+suva.Hey(); //instances can not call it
+```
+
