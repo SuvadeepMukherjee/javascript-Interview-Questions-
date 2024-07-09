@@ -365,3 +365,100 @@ Person.Hey();
 suva.Hey(); //instances can not call it
 ```
 
+#### Q25:Add a static method Hey which logs to the console “hey there” to the above class and then call it ? 
+
+```js
+class PersonCl {
+
+  constructor(firstName, birthYear) {
+
+    this.firstName = firstName;
+
+    this.birthYear = birthYear;
+
+  }
+
+  calcAge() {
+
+    console.log(2037 - this.birthYear);
+
+  }
+
+  greet() {
+
+    console.log(`Hey ${this.firstName}`);
+
+  }
+
+}
+```
+
+**Answer**:
+
+```js
+class PersonCl {
+
+  constructor(firstName, birthYear) {
+
+    this.firstName = firstName;
+
+    this.birthYear = birthYear;
+
+  }
+
+  calcAge() {
+
+    console.log(2037 - this.birthYear);
+
+  }
+
+  greet() {
+
+    console.log(`Hey ${this.firstName}`);
+
+  }
+
+  static hey() {
+
+    console.log("Hey there");
+
+  }
+
+}
+
+PersonCl.hey();
+```
+
+#### Q26:What is the purpose of Object.create()
+
+**Answer**: We can use Object.create to essentially set the prototype of an object to any other object that we want 
+
+```js
+const PersonProto = {
+
+  init(firstName, birthYear) {
+
+    this.firstName = firstName;
+
+    this.birthYear = birthYear;
+
+  },
+
+  calcAge() {
+
+    console.log(2037 - this.birthYear);
+
+  },
+
+};
+
+const sarah = Object.create(PersonProto);
+
+sarah.init("Sarah", 1979);
+
+sarah.calcAge();
+
+console.log(sarah.__proto__ === PersonProto); //true
+```
+
+![object.create](../assets/object-create.png)
