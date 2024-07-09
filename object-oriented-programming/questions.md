@@ -507,3 +507,51 @@ Student.prototype.introduce = function () {
 };
 ```
 
+#### Q28:There is a Person Class .It has properties firstname and birthYear .It has a calcAge function which logs to the console (2037-this.birthYear) .Create a Student Class which inherits from the Person Class .It has propeties firstName,birthYear and course .It inherits the firstName,birthYear from the Person class  The Student class has a method introduce which logs to the console the following string `My name is ${this.firstName} and i study ${this.course}`
+
+**Answer**:
+
+```js
+class PersonCl {
+
+  constructor(firstName, birthYear) {
+
+    this.firstName = firstName;
+
+    this.birthYear = birthYear;
+
+  }
+
+  calcAge() {
+
+    console.log(2037 - this.birthYear);
+
+  }
+
+}
+
+class StudentCl extends PersonCl {
+
+  constructor(firstName, birthYear, course) {
+
+    //always needs to happen first responsible for this keyword
+
+    super(firstName, birthYear);
+
+    this.course = course;
+
+  }
+
+  introduce() {
+
+    console.log(`My name is ${this.firstName} and i study ${this.course}`);
+
+  }
+
+}
+
+const martha = new StudentCl("Martha", 2012, "CSE");
+
+martha.introduce();
+```
+
