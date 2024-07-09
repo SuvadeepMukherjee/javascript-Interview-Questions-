@@ -130,3 +130,40 @@ const matilda = new Person("matilda", 2017);
 #### Q12: What is prototype chain ? 
 
 **Answer**: Series of links between objects linked through prototypes 
+
+#### Q13:Confirm the following : 
+
+1. Person.prototype is prototype of matilda
+2. species is not a property of matilda
+3. matilda is a instance of Person
+
+![confirm](../assets/confirm.png)
+
+**Answer**:The answer is shown below 
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.age);
+
+};
+
+Person.prototype.species = "Homo sapiens";
+
+const matilda = new Person("matilda", 2017);
+
+console.log(Person.prototype.isPrototypeOf(matilda));
+
+console.log(matilda.hasOwnProperty("species"));
+
+console.log(matilda instanceof Person);
+```
+
