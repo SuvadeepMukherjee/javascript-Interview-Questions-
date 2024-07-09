@@ -462,3 +462,48 @@ console.log(sarah.__proto__ === PersonProto); //true
 ```
 
 ![object.create](../assets/object-create.png)
+
+#### Q27:There is a Person Constructor function .It has properties firstname and birthYear .It has a calcAge function which logs to the console (2037-this.birthYear) .Create a Student constructor function which inherits from the Person constructor function .It has propeties firstName,birthYear and course .It inherits the firstName,birthYear from the Person constructor function . The Student constructor function has a method introduce which logs to the console the following string `My name is ${this.firstName} and i study ${this.course}`
+
+**Answer**:
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.birthYear);
+
+};
+
+const Student = function (firstName, birthYear, course) {
+
+  Person.call(this, firstName, birthYear, course);
+
+  this.course = course;
+
+};
+
+//Object.create craetes a new object so we must set the prototype chain
+
+//before adding methods on the Student.prototype object because then they would be lost
+
+//linking prototypes
+
+Student.prototype = Object.create(Person.prototype);
+
+Student.prototype.constructor = Student;
+
+Student.prototype.introduce = function () {
+
+  console.log(`My name is ${this.firstName} and i study ${this.course}`);
+
+};
+```
+
