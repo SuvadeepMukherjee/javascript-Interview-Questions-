@@ -167,3 +167,26 @@ console.log(matilda.hasOwnProperty("species"));
 console.log(matilda instanceof Person);
 ```
 
+#### Q14:What is at the top of the prototype chain ? 
+
+**Answer**: `Object.prototype`
+
+#### Q15:What does the constructor property on Person.prototype object point to ? 
+
+```js
+const Person = function (firstName, birthYear) {
+
+  this.firstName = firstName;
+
+  this.birthYear = birthYear;
+
+};
+
+Person.prototype.calcAge = function () {
+
+  console.log(2037 - this.birthYear);
+
+};
+```
+
+**Answer**:It points back to the constructor function
