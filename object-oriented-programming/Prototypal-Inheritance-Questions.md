@@ -45,3 +45,37 @@ Driving a vehicle<br> Driving a car
 | `__proto__` | a property of an object instance    | points to the prototype object from which the instance inherits |
 | `prototype` | a property of constructor functions | defines the prototype for all instances created by that constructor |
 
+#### Q3: What is `Object.setPrototypeOf` ? 
+
+**Answer**: `Object.setPrototypeOf`  is a method in JavaScript used to set the prototype (i.e., __proto__) of a specified object to another object or null.
+
+```javascript
+var animalPrototype = {
+
+  sound: function () {
+
+    console.log("Making a sound.....");
+
+  },
+
+};
+
+//create an object with animalPrototype as its prototype
+
+var dog = Object.create(animalPrototype);
+
+var cat = {
+
+  purr: function () {
+
+    console.log("Purring....");
+
+  },
+
+};
+
+Object.setPrototypeOf(dog, cat);
+
+dog.purr(); //purring because cat is prototype of dog
+```
+
