@@ -63,3 +63,35 @@ Teacher.prototype.like = function () {
 #### Q2:Explain the difference between a class and an object in Javascript 
 
 **Answer**:In JavaScript, a class is a blueprint for creating objects, while an object is an instance of a class containing data and behavior defined by the class
+
+#### Q3:What will be logged to the console ? 
+
+```js
+class Rectangle {
+
+  constructor(width, height) {
+
+    this.width = width;
+
+    this.height = height;
+
+  }
+
+  area() {
+
+    return this.width * this.height;
+
+  }
+
+}
+
+const square = new Rectangle(5, 5);
+
+const rect = new Rectangle(4, 6);
+
+square.area();
+
+rect.area();
+```
+
+**Answer**:
