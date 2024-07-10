@@ -55,3 +55,7 @@ console.log(genObj.next());
 ```
 
 The value property is equal to the value that we yielded .The done property is a boolean value which is only set to true once the generator function returned a value(not yielded)  `{ value: 1, done: false }` If we again console.log(genObj.next()) we will get `First log followed by  { value: 2, done: false }` if we again log genObj.next() we will get `second log followed by { value: 'Done', done: true }`.*We can only iterate a generator object once any further genObj.next() will result in the following object {value:”undefined” , done:true} forever , if we want to iterate it again we have to create a new generator function* 
+
+#### Q5:What is NaN ?
+
+**Answer**:special value that represents an unrepresentable or undefined numerical value, typically resulting from operations like dividing by zero or attempting to perform arithmetic on non-numeric values.
