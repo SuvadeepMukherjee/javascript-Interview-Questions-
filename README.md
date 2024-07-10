@@ -39,10 +39,12 @@ For browser based conversion of these .md format files, to PDF format, I recomme
   - [Output based Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous%20javascript/output-based-questions.md)
 
 - object oriented programming
-
   - [Theoretical Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/object-oriented-programming/theoretical-questions.md)
   - [Prototypal Inheritance](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/object-oriented-programming/Prototypal-Inheritance-Questions.md)
   - [Classes And Constructors](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/object-oriented-programming/Class-And-Constructors.md)
-
-  
+- [compose and pipe](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/compose-pipe/questions.md)
+- [debouncing throttling](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/debouncing-throttling/Questions.md)
+- [type coercion](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/type-coercion/Questions.md)
+- [event propagation](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/event-propagation/Questions.md)
+- [misc questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/misc%20topics/Questions.md)
 
