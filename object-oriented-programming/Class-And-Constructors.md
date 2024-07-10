@@ -242,3 +242,153 @@ const result = calc.add(10).subtract(5).multiply(2).divide(2).getResult();
 console.log(result); // Output: 5
 ```
 
+#### Q8:Implement  a shape class with an area() method .Create subclass “Circle” and “Square” that inherit from Shape and override the area() method to calculate their respective areas
+
+**Answer**: 
+
+```js
+class Shape {
+
+  area() {
+
+    return 0;
+
+  }
+
+}
+
+class Circle extends Shape {
+
+  constructor(radius) {
+
+    super();
+
+    this.radius = radius;
+
+  }
+
+  area() {
+
+    return Math.PI * this.radius * this.radius;
+
+  }
+
+}
+
+class Square extends Shape {
+
+  constructor(side) {
+
+    super();
+
+    this.side = side;
+
+  }
+
+  area() {
+
+    return this.side * this.side;
+
+  }
+
+}
+```
+
+#### Q9:Create a class named 'Student' with String variable 'name' and integer variable 'roll_no'.Create a constructor through which you can assign values through objects on creation of objects. if No value is passed through object then by default name should be initialized to "john" and roll_no as 2.Create a method display to print the attributes name and roll_no
+
+**Answer**:The following code snippet illustrates the answer
+
+```js
+class Student {
+
+  constructor(name = "John", roll_no = 2) {
+
+    this.name = name;
+
+    this.roll_no = roll_no;
+
+  }
+
+  display() {
+
+    console.log(
+
+      `Students Name: ${this.name},Students Roll Number: ${this.roll_no}`
+
+    );
+
+  }
+
+}
+
+const suva = new Student("suva", 1);
+
+const john = new Student();
+
+suva.display();
+
+john.display();
+```
+
+#### Q10:Write a program to create a class count_objects .It must have a method get_count which returns the number of objects created in real time
+
+**Answer**: The follwing code snippet shows the code 
+
+```js
+class count_object {
+
+  static i = 0;
+
+  constructor() {
+
+    count_object.i++;
+
+  }
+
+  static getCount() {
+
+    return count_object.i;
+
+  }
+
+}
+
+const obj1 = new count_object();
+
+const obj2 = new count_object();
+
+console.log(count_object.getCount());
+```
+
+#### Q11:Create a class Parent which has a method print() which logs to the console “this is parent class”. Create a class Child which inherits from the Parent class.The child class also has a method print . It logs to the console “this is child class” and then calls the parent class method print.Create a object suva of the child class and then call the print method of suva object
+
+**Answer**: The followinf code snippet shows the answer:
+
+```js
+class Parent {
+
+  print() {
+
+    console.log("this is a parent class");
+
+  }
+
+}
+
+class Child extends Parent {
+
+  print() {
+
+    console.log("this is a child class");
+
+    super.print();
+
+  }
+
+}
+
+const suva = new Child();
+
+suva.print();
+```
+
