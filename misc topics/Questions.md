@@ -77,3 +77,7 @@ console.log(exampleString);
 #### Q8:What are destructors ? 
 
 **Answer**:Destructors are special member functions in C++ that are automatically called when an object goes out of scope or is explicitly deleted. They are used to release resources acquired by the object, such as memory or file handles.
+
+#### Q9:Explain garbage collection in js.? When is a variable garbage collected?
+
+**Answer**:Garbage collection in JavaScript is a process where the interpreter automatically frees up memory by removing unreferenced objects. Variables are garbage collected when they are no longer reachable, meaning there are no references to them in the program.
