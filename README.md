@@ -81,4 +81,4 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 
 ### Miscellaneous Questions
 
-- [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/misc topics/Questions.md)
+- [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/misc%20topics/Questions.md)
