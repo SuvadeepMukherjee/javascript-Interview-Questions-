@@ -87,3 +87,38 @@ dog.purr(); //purring because cat is prototype of dog
 var obj1 = Object.create(null);
 ```
 
+#### Q5:What will be logged to the console ? 
+
+```js
+function A() {}
+
+A.prototype.foo = 10;
+
+function B() {}
+
+B.prototype = Object.create(A.prototype);
+
+B.prototype.foo = 20;
+
+function C() {}
+
+C.prototype = Object.create(B.prototype);
+
+C.prototype.constructor = C;
+
+C.prototype.foo = 30;
+
+var obj1 = new A();
+
+var obj2 = new B();
+
+var obj3 = new C();
+
+console.log(obj1.foo);
+
+console.log(obj2.foo);
+
+console.log(obj3.foo);
+```
+
+**Answer**:
