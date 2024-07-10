@@ -34,7 +34,7 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 
 ### Spread, Rest, Destructuring
 
-- [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/Spread%2CRest and Destructuring based Questions/questions.md)
+- [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/Spread%2CRest%20and%20Destructuring%20based%20Questions/questions.md)
 
 ### Currying
 
