@@ -79,3 +79,11 @@ Object.setPrototypeOf(dog, cat);
 dog.purr(); //purring because cat is prototype of dog
 ```
 
+#### Q4:How can you create an object without a prototype in javascript ?
+
+**Answer**: The following code snippet shows how can we create an object without a prototype 
+
+```js
+var obj1 = Object.create(null);
+```
+
