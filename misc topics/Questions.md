@@ -101,7 +101,7 @@ Pass by Value
 - When you pass a primitive type (like a number, string, or boolean) as an argument to a function, a copy of the value is passed.
 - Any changes made to the parameter inside the function do not affect the original value outside the function.
 
-**Pass by Reference**:
+Pass by Reference:
 
 - When you pass an object (including arrays and functions) as an argument to a function, a reference to the object is passed.
 - Any changes made to the object inside the function will affect the original object outside the function.
