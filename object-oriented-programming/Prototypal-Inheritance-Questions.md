@@ -121,4 +121,6 @@ console.log(obj2.foo);
 console.log(obj3.foo);
 ```
 
-**Answer**:
+**Answer**:The following will be logged to the console 
+
+10<br>20<br>30
