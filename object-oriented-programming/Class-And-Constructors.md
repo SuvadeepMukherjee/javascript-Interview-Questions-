@@ -94,4 +94,4 @@ square.area();
 rect.area();
 ```
 
-**Answer**:
+**Answer**:`25 24`
