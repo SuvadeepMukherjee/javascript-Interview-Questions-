@@ -82,3 +82,13 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 ### Miscellaneous Questions
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/misc%20topics/Questions.md)
+
+
+
+Here are some of the resources I used to compile these notes: -
+
+-  [The Complete JavaScript Course 2024: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/) 
+- [Namaste JavaScript by Akshay Saini](https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
+- [Namaste JavaScript Season 2 by Akshay Saini](https://www.youtube.com/playlist?list=PLlasXeu85E9eWOpw9jxHOQyGMRiBZ60aX)
+- [JavaScript Interview Questions by RoadsideCoder](https://www.youtube.com/playlist?list=PLKhlp2qtUcSaCVJEt4ogEFs6I41pNnMU5)
+- Sharpener Assignments and Placement Questions
