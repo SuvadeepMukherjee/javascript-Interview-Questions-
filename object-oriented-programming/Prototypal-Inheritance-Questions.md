@@ -124,3 +124,9 @@ console.log(obj3.foo);
 **Answer**:The following will be logged to the console 
 
 10<br>20<br>30
+
+#### Q6:What are object prototype methods ?
+
+**Answer**:Object prototype methods are methods that are available to all objects created in JavaScript because they are defined on the **`Object.prototype`** object. These methods can be accessed and used by all JavaScript objects through prototype inheritance.
+
+example : toString()
