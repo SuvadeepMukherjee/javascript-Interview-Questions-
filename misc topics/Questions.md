@@ -81,3 +81,13 @@ console.log(exampleString);
 #### Q9:Explain garbage collection in js.? When is a variable garbage collected?
 
 **Answer**:Garbage collection in JavaScript is a process where the interpreter automatically frees up memory by removing unreferenced objects. Variables are garbage collected when they are no longer reachable, meaning there are no references to them in the program.
+
+#### Q10:5 ES6 features
+
+**Answer**: 
+
+1. Arrow Functions: Concise syntax for function expressions.
+2. let and const Declarations: Block-scoped variables.
+3. Template Literals: Improved string interpolation and multiline strings.
+4. Destructuring Assignment: Extract values from arrays or objects into variables.
+5. Classes: Syntactical sugar for constructor functions and prototypal inheritance.
