@@ -10,7 +10,7 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 
 ## Table of Contents
 
-### let-const-var
+let-const-var
 
 - [Scoping](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/let-const-var/scoping.md)
 - [Shadowing](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/let-const-var/shadowing.md)
@@ -19,67 +19,67 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 - [Execution Context](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/let-const-var/execution-context.md)
 - [Temporal Dead Zone](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/let-const-var/Tempoaral-Dead-zone.md)
 
-### map-filter-reduce-forEach
+map-filter-reduce-forEach
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/map-filter-reduce-forEach/Questions.md)
 
-### Functions
+Functions
 
 - [Theoretical Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/functions/theoretical-questions.md)
 - [Output Based Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/functions/output-based-questions.md)
 
-### Closures
+Closures
 
 - [Theory](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/closure/theory.md)
 
-### Spread, Rest, Destructuring
+Spread, Rest, Destructuring
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/Spread%2CRest%20and%20Destructuring%20based%20Questions/questions.md)
 
-### Currying
+Currying
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/currying/questions.md)
 
-### Objects
+Objects
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/objects/questions.md)
 
-### this Keyword
+this Keyword
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/this%20keyword/questions.md)
 
-### call-apply-bind
+call-apply-bind
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/call-apply-bind/Questions.md)
 
-### Asynchronous Programming
+Asynchronous Programming
 
 - [Theoretical Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous%20javascript/Theoretical-questions.md)
 - [Output Based Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous%20javascript/output-based-questions.md)
 
-### Object Oriented Programming
+Object Oriented Programming
 
 - [Theoretical Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/object-oriented-programming/theoretical-questions.md)
 - [Prototypal Inheritance](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/object-oriented-programming/Prototypal-Inheritance-Questions.md)
 - [Classes and Constructors](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/object-oriented-programming/Class-And-Constructors.md)
 
-### Compose and Pipe
+Compose and Pipe
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/compose-pipe/questions.md)
 
-### Debouncing and Throttling
+Debouncing and Throttling
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/debouncing-throttling/Questions.md)
 
-### Type Coercion
+Type Coercion
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/type-coercion/Questions.md)
 
-### Event Propagation
+Event Propagation
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/event-propagation/Questions.md)
 
-### Miscellaneous Questions
+Miscellaneous Questions
 
 - [Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/misc%20topics/Questions.md)
 
