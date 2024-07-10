@@ -54,8 +54,8 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 
 ### Asynchronous Programming
 
-- [Theoretical Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous javascript/Theoretical-questions.md)
-- [Output Based Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous javascript/output-based-questions.md)
+- [Theoretical Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous%20javascript/Theoretical-questions.md)
+- [Output Based Questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/asynchronous%20javascript/output-based-questions.md)
 
 ### Object Oriented Programming
 
