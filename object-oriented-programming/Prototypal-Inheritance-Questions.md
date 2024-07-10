@@ -36,7 +36,7 @@ car.drive();
 
 Driving a vehicle<br> Driving a car
 
-#### Q2:Explain the difference between __proto__ and prototype in javascript
+#### Q2:Explain the difference between `__proto__` and prototype in javascript
 
 **Answer**:The following table illustrates the difference between `__proto__` and `prototype`
 
