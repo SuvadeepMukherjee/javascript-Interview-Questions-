@@ -91,3 +91,17 @@ console.log(exampleString);
 3. Template Literals: Improved string interpolation and multiline strings.
 4. Destructuring Assignment: Extract values from arrays or objects into variables.
 5. Classes: Syntactical sugar for constructor functions and prototypal inheritance.
+
+#### Q11:Pass by value and Pass by reference 
+
+**Answer**:
+
+Pass by Value
+
+- When you pass a primitive type (like a number, string, or boolean) as an argument to a function, a copy of the value is passed.
+- Any changes made to the parameter inside the function do not affect the original value outside the function.
+
+**Pass by Reference**:
+
+- When you pass an object (including arrays and functions) as an argument to a function, a reference to the object is passed.
+- Any changes made to the object inside the function will affect the original object outside the function.
