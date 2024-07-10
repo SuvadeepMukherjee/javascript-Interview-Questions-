@@ -35,3 +35,13 @@ car.drive();
 **Answer**:The output will be 
 
 Driving a vehicle<br> Driving a car
+
+#### Q2:Explain the difference between __proto__ and prototype in javascript
+
+**Answer**:The following table illustrates the difference between `__proto__` and `prototype`
+
+|             | What it is                          | Purpose                                                      |
+| ----------- | ----------------------------------- | ------------------------------------------------------------ |
+| `__proto__` | a property of an object instance    | points to the prototype object from which the instance inherits |
+| `prototype` | a property of constructor functions | defines the prototype for all instances created by that constructor |
+
