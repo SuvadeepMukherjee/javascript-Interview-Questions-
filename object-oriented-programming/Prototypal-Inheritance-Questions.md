@@ -32,4 +32,6 @@ vehicle.drive();
 car.drive();
 ```
 
-**Answer**:
+**Answer**:The output will be 
+
+Driving a vehicle<br> Driving a car
