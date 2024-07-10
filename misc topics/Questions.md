@@ -59,3 +59,14 @@ The value property is equal to the value that we yielded .The done property is a
 #### Q5:What is NaN ?
 
 **Answer**:special value that represents an unrepresentable or undefined numerical value, typically resulting from operations like dividing by zero or attempting to perform arithmetic on non-numeric values.
+
+#### Q6:What are escape characters? Why are they used? Give code example.
+
+**Answer**:Escape characters are special characters used in strings to represent characters that are otherwise difficult to include. They are used to include special characters like newlines
+
+```js
+let exampleString = "Hello,\nWelcome to  tutorial Hell!";
+
+console.log(exampleString);
+```
+
