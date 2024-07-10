@@ -1,4 +1,4 @@
-## Object Oriented Programming TheoreticalQuestions
+## Object Oriented Programming Theoretical Questions
 
 #### Q1:What is object oriented programming ?
 
