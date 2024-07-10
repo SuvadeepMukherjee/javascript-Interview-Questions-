@@ -28,3 +28,12 @@ For browser based conversion of these .md format files, to PDF format, I recomme
 - functions
   - [theoretical questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/functions/theoretical-questions.md)
   - [output based questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/functions/output-based-questions.md)
+- [closures](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/closure/theory.md)
+- [Spread Rest Destructuring](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/Spread%2CRest%20and%20Destructuring%20based%20Questions/questions.md)
+- [currying](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/currying/questions.md)
+- [objects](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/objects/questions.md)
+- [this keyword](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/this%20keyword/questions.md)
+- [call-apply-bind](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/call-apply-bind/Questions.md)
+- asynchronous programming
+  - [Theoretical Questions]()
+
