@@ -24,4 +24,7 @@ For browser based conversion of these .md format files, to PDF format, I recomme
   - [Execution Context](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/let-const-var/execution-context.md)
   - [Temporal Dead Zone](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/let-const-var/Tempoaral-Dead-zone.md)
 
--  [map-filter-reduce-forEach]()
+-  [map-filter-reduce-forEach](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/map-filter-reduce-forEach/Questions.md)
+- functions
+  - [theoretical questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/functions/theoretical-questions.md)
+  - [output based questions](https://github.com/SuvadeepMukherjee/javascript-Interview-Questions-/blob/main/functions/output-based-questions.md)
